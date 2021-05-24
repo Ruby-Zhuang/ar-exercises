@@ -11,9 +11,9 @@ puts "----------"
 # Exercise 6: One-to-many association
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
 @store1.employees.create(first_name: "John", last_name: "Smith", hourly_rate: 50)
-@store1.employees.create(first_name: "Jane", last_name: "Doe", hourly_rate: 40)
+@store1.employees.create(first_name: "Jane", last_name: "Doe", hourly_rate: 41)
 
 @store2.employees.create(first_name: "Archie", last_name: "Cohen", hourly_rate: 100)
-@store2.employees.create(first_name: "Lydia", last_name: "Chan", hourly_rate: 200)
+@store2.employees.create(first_name: "Lydia", last_name: "Chan", hourly_rate: 199)
 @store2.employees.create(first_name: "Ruby", last_name: "Zhuang", hourly_rate: 150)
 

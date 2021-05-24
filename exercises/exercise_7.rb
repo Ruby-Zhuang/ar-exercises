@@ -9,4 +9,14 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+# Exercise 7: Validations for both models
+puts "Enter a store name:"
+print "> "
+store_name = $stdin.gets.chomp
+
+# new_store = Store.create # For testing for multiple errors
+
+new_store = Store.create(name: store_name)
+
+# Displays errors one on each line
+puts new_store.errors.full_messages
