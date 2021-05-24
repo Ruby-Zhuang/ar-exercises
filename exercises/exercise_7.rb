@@ -16,7 +16,7 @@ store_name = $stdin.gets.chomp
 
 # new_store = Store.create # For testing for multiple errors
 
-new_store = Store.create(name: store_name)
+new_store = Store.create(name: store_name, mens_apparel: true)
 
 # Displays errors one on each line
 puts new_store.errors.full_messages
